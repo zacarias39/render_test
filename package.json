@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build:ui": "cd ~/Downloads/fullstackopen/part_2/notes && rm -fr dist && npm run build && cp -r dist ~/Downloads/render_test",
+    "deploy": "npm run build:ui && git add . && git commit -m 'deploying the app newest version' && git push",
     "dev": "node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
