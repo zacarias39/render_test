@@ -1,0 +1,20 @@
+{
+  "name": "phonebook_back",
+  "version": "1.0.0",
+  "description": "an API that returns a list of phonebook entries",
+  "keywords": [
+    "API"
+  ],
+  "license": "MIT",
+  "author": "Zacarias Casimiro",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "morgan": "^1.10.1"
+  }
+}
