@@ -10,6 +10,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "build:ui": "cd ~/Downloads/fullstackopen/part_2/phonebook && rm -fr dist && npm run build && cp -r dist ~/Downloads/render_test/phonebook",
     "dev": "node --watch index.js",
     "start": "node index.js"
   },
