@@ -1,6 +1,5 @@
 const express = require('express')
 const process = require('process')
-const cors = require('cors')
 const app = express()
 const PORT = process.env.PORT || 3001
 
@@ -29,7 +28,6 @@ const generateId = () => {
   return String(maxId + 1)
 }
 
-app.use(cors())
 app.use(express.static('dist'))
 app.use(express.json())
 
